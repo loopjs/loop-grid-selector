@@ -13,16 +13,16 @@ var Selector = require('loop-grid-selector')
 
 Returns an extended instance of ObservGrid with `shape` specified.
 
-### selector.start(inputGrid, done)
+### `selector.start(inputGrid, done)`
 
 Pass in an observable ArrayGrid. `done` will be called on `stop` or before subsequent `start`.
 
 Any truthy values will trigger a selection. Simultaneous true values will trigger range selection. `selection` will have `.set(selectedIndexes)` called on every change.
 
-### selector.clear()
+### `selector.clear()`
 
 Sets `selection` to an empty array.
 
-### selector.stop()
+### `selector.stop()`
 
 Release watch of `inputGrid` and call `done`.
