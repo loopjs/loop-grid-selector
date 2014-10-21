@@ -1,0 +1,26 @@
+{
+  "name": "loop-grid-selector",
+  "version": "1.0.0",
+  "description": "Range selector for loop-grid.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmckegg/loop-grid-selector.git"
+  },
+  "author": "Matt McKegg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmckegg/loop-grid-selector/issues"
+  },
+  "homepage": "https://github.com/mmckegg/loop-grid-selector",
+  "devDependencies": {
+    "tape": "^3.0.1"
+  },
+  "dependencies": {
+    "adiff": "^0.2.12",
+    "observ-grid": "^2.6.0"
+  }
+}
