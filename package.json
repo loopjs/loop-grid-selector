@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "adiff": "^0.2.12",
+    "observ": "^0.2.0",
     "observ-grid": "^2.6.0"
   }
 }

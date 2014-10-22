@@ -1,9 +1,19 @@
 var ObservGrid = require('observ-grid')
 var watchGridChanges = require('observ-grid/watch-changes')
+var computed = require('observ/computed')
 
 module.exports = function(shape){
 
   var self = ObservGrid([], shape)
+
+  self.selectedIndexes = computed([self], function(selectionGrid){
+    return selectionGrid.data.reduce(function(result, value, i){
+      if (value){
+        result.push(i)
+      }
+      return result
+    }, [])
+  })
 
   var release = null
   var doneCallback = null
