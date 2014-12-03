@@ -27,6 +27,7 @@ module.exports = function(shape){
 
   self.clear = function(){
     self.data.set([])
+    down.length = 0
   }
 
   self.stop = function(){
